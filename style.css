@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 'header header'
+                         'p2 p2'
+                         'p3 p3'
+                         'p4 p4'
+                         "footer footer";
+
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 98vw;
+                     
+}
+
+header{
+    grid-area: header;
+    background-color: #38e268;
+}
+
+
+main:nth-child(2){
+    grid-area: p1;
+    background-color: #bde2fc;
+}
+
+main:nth-child(3){
+    grid-area: p2;
+    background-color: #bde2fc;
+}
+
+main:nth-child(4){
+    grid-area: p3;
+    background-color: #bde2fc;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: #d8d6d8;
+}
