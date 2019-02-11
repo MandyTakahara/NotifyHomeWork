@@ -1,0 +1,10 @@
+Dei clone dentro do repositório do meu projeto/master. E depois mudei o nome do d-N-105-psdNotify para a pasta img. Será algo problematico? 
+
+#38e268
+
+esqueci do # pra chamar o main e tava sofrendo até agr por causa disso, que raiva!
+
+pq tive q colocar display flex para o bg-img ficar no grid-header somente? E não em todas as repartições do grid? 
+
+
+
