@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    /* font-family: Arial, Helvetica, sans-serif */}
+}
 
 #main{
     display: grid;
@@ -8,9 +8,9 @@ body{
                          'nav nav nav nav'
                          'section section section section'
                          'aside aside aside aside'
-                         "footer footer footer footer";
+                         'footer footer footer footer';
 
-grid-template-rows: 600px 250px 250px 250px 250px;
+grid-template-rows: 37.5vw auto auto auto 50px;
 grid-template-columns: 25vw 25vw 25vw 25vw;
                      
 }
@@ -20,28 +20,23 @@ header{
     background-color: #38e268;
     display: flex;
     background-image: url(img/banner.png);
-}
-
-header{
+    background-size: 100%;
     display: grid;
-    grid-template-areas:    "tsi hand" 
-                            "tsi hand" 
-                            "icons hand";
+    grid-template-areas:    ". tsi hand ." 
+                            ". tsi hand ." 
+                            ". icons hand .";
     grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 50% 50%;
-    font-size: 15pt;
-    color: #ffffff;
+    grid-template-columns: 10% 40% 40% 10%;
+    font-size: 20pt;
+    color: #ffffff;}
 
 
-
-}
 
 #tsi{
-    width: auto;
-    height: 100er;
     grid-area: tsi;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #title{
@@ -59,18 +54,53 @@ header{
     display: flex;
     align-items: flex-end;
 }
+
+
+
+
+
+aside{
+    grid-area: aside;
+    padding: 20px 0;
+}
+
+#moço{
+    display: flex;
+    width: 70%; 
+    cursor: pointer;
+    justify-content: space-between}
+
+#moço div{
+    background: #38e268;
+    height: 50px;
+}
+
+#moço div:hover img {
+    opacity: 0.25;
+}
+
+
+
+
+
+.icons{
+    grid-area: icons;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.icons div{
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 13px;
+    border-radius: 100%;
+    cursor: pointer;
+}
  
-
-
-
-
-
-
-
-
-
-
-
+.iconsdown{
+    width: 15%
+}
 
 
 
@@ -78,21 +108,120 @@ header{
 
 nav{
     grid-area: nav;
-    background-color: #f0e3d9;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+    text-align: center;
 }
+
+nav .navp1{
+    font-weight: bold;
+}
+
+nav .navp2{
+    color: rgb(167, 167, 167);
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div div{
+    background-color: #38e268;
+    border-radius: 50%;
+    padding: 10px;
+}
+
 
 section{
     grid-area: section;
-    background-color: #b0b6b9;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    padding: 20pt 25pt;
+    justify-content: space-around;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section div p{
+    margin: 4pt;
+}
+
+div div #exceto{
+    margin-bottom: 10pt;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+section .grey{
+    color: rgb(167, 167, 167);
+}
+
+section div #button{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 8%;
+}
+
+button{
+    background-color: #38e268;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+section input{
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    border: none;
+    padding: 5px;
+
 }
 
 aside{
     grid-area: aside;
-    background-color: #f0e3d9;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside p{
+    color:  rgb(167, 167, 167);
+}
+
+.negrito{
+    color: black;
+    font-weight: bold;
+    padding: 2pt;
+}
+
+#loremQ{
+    text-align: center;
+    padding: 0 20%;
 }
 
 
 footer{
+    padding: 0 30%;
     grid-area: footer;
-    background-color: #b0b6b9;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
