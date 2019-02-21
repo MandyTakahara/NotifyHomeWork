@@ -21,7 +21,7 @@ header{
     grid-area: header;
     background-color: #38e268;
     display: flex;
-    background-image: url(img/banner.png);
+    background-image: url(banner.png);
     background-size: 100%;
     display: grid;
     grid-template-areas:    ". tsi hand ." 
